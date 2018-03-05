@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960">
+<title>FG 2018 FOR-LQ workshop GLADNet</title>
+<link rel="stylesheet" type="text/css" href="css/site.20180305151939.css">
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="css/site.20180305151939-lteIE7.css">
+<![endif]-->
+</head>
+<body id="body">
+<div class="pos vis section">
+<div class="vis-2 pos-2 size cont">
+<p class="para"><span class="font">GLADNet: Low-Light Enhancement Network with Global Awareness</span></p>
+</div>
+<div class="vis-2 pos-3 size-2 cont-2">
+<div class="vis-2 pos-4 size-3 cont-3">
+<p class="para-2"><span class="font-2"><a href="https://weichen582.github.io">Chen Wei *</a></span></p>
+</div>
+<div class="vis-2 pos-5 size-3 cont-4">
+<p class="para-2"><span class="font-2"><a href="https://daooshee.github.io/website/">Wenjing Wang *</a></span></p>
+</div>
+<div class="vis-2 pos-6 size-3 cont-5">
+<p class="para-2"><span class="font-2"><a href="http://www.icst.pku.edu.cn/struct/people/whyang.html">Wenhan Yang</a></span></p>
+</div>
+<div class="vis-2 pos-7 size-3 cont-6">
+<p class="para-2"><span class="font-2"><a href="http://www.icst.pku.edu.cn/struct/people/liujiaying.html">Jiaying Liu</a></span></p>
+</div>
+</div>
+<div class="vis-2 pos-8 size-4 cont">
+<p class="para-2"><span class="font-3">FG, 2018 | Paper Link: NULL</span></p>
+</div>
+<div class="vis-2 pos-9 size-5 cont-2">
+<div class="vis-2 pos-4 size-5 colwrapper">
+<div class="vis-2 pos-4 size-5 cont-7">
+<p class="para-3"><span class="font-4">Abstract</span></p>
+<p class="para-4"><span class="font-3">We address the problem of low-light enhancement. Our key idea is to first calculate a global illumination estimation for the low-light input, then adjust the illumination under the guidance of the estimation and supplement the details using a concatenation with the original input. Considering that, we propose a </span><span class="font-2">GL</span><span class="font-3">obal illumination-</span><span class="font-2">A</span><span class="font-3">ware and </span><span class="font-2">D</span><span class="font-3">etail-preserving </span><span class="font-2">Net</span><span class="font-3">work (</span><span class="font-2">GLADNet</span><span class="font-3">). The input image is rescaled to a certain size and then put into an encoder-decoder network to generate global priori knowledge of the illumination. Based on the global prior and the original input image, a convolutional network is employed for detail reconstruction. For training GLADNet, we use a synthetic dataset generated from RAW images. Extensive experiments demonstrate the superiority of our method over other com- pared methods on the real low-light images captured in various conditions.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-3"><span class="font-4">Network Architecture</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">The architecture of GLADNet. The architecture consists of two steps, global illumination estimation step and detail reconstruction step. In the first step, the encoder-decoder network produces an illumination estimation of a fixed size (96 &times; 96 here). In the second step, a convolutional network utilizes the input image and the outputs from the previous step to compensate the details.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-3"><span class="font-4">Experimental Results</span></p>
+<p class="para-4"><span class="font-3">The proposed method is implemented by Tensorflow on NVIDIA GeForce GTX 1080. We compare the proposed method with MSRCR[1], LIME[2], DeHZ[3], and SRIE[4]</span><span class="font-3"> and evaluate the results on public LIME-data[2], DICM[6], and MEF[7] datasets.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">Subjective evaluation:</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">Objective evaluation:</span></p>
+<p class="para-4"><span class="font-3">We use the Naturalness Image Quality Evaluator (NIQE) [5] no-reference image quality score for quantitative comparison. NIQE compares images to a default model computed from images of natural scenes. A smaller score indicates better perceptual quality. As shown in the table, our method outperforms other state-of-the-art methods on average.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">Running time:</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">For MSRCR, LIME, DeHZ, and SRIE, we used the MATLAB code provided by Zhenqiang Ying on </span><span class="font-5"><a target="_blank" href="https://github.com/baidut/BIMEF/tree/master/lowlight">lowlight</a></span><span class="font-3">. For these and GLADNet CPU version, we use Intel Core i5 at 2.7GHz. For GLADNet GPU version, we use Intel Core i7-6850K at 3.60GHz and NVIDIA GeForce GTX 1080. We calculated the average running time per image to enhance the MEF dataset.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">Applications on Computer Vision:</span></p>
+<p class="para-4"><span class="font-3">We test several real low-light images and their corresponding enhanced results on </span><span class="font-5"><a href="">Google Cloud Vision API</a></span><span class="font-3">. GLADNet helps Google Cloud Vision API identify the objects in this image.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">Results of Google Cloud Vision API for &ldquo;Eiffel Tower&rdquo; from MEF dataset. Before enhancement, Google Cloud Vision can not recognize the Eiffel Tower. After enhanced by GLADNet, the Eiffel Tower is identified and marked by a green box.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">Results for &ldquo;Room&rdquo; from LIME-data dataset. Potted plant and painting in the non-enhanced version are not identified by Google Cloud Vision.</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-3"><span class="font-4">Download Link</span></p>
+<p class="para-4"><span class="font-3">Trained model: NULL</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-3"><span class="font-4">Reference</span></p>
+<p class="para-4"><span class="font-3">[1] Z. Jobson, Daniel Jand Rahman and G. A. Woodell, &ldquo;A multiscale retinex for bridging the gap between color images and the human observation of scenes,&rdquo; IEEE Transactions on Image Processing, vol. 6, no. 7, pp. 965&ndash;76, 1997.</span></p>
+<p class="para-4"><span class="font-3">[2] X. Guo, Y. Li, and H. Ling, &ldquo;Lime: Low-light image enhance- ment via illumination map estimation,&rdquo; IEEE Transactions on Image Processing, vol. 26, no. 2, pp. 982&ndash;993, 2017.</span></p>
+<p class="para-4"><span class="font-3">[3] X. Dong, Y. Pang, and J. Wen, &ldquo;Fast efficient algorithm for enhancement of low lighting video,&rdquo; IEEE International Conference on Multimedia and Expo, pp. 1&ndash;6, 2011.</span></p>
+<p class="para-4"><span class="font-3">[4] X. Fu, D. Zeng, Y. Huang, X. P. Zhang, and X. Ding, &ldquo;A weighted variational model for simultaneous reflectance and illumination estimation,&rdquo; Computer Vision and Pattern Recognition, pp. 2782&ndash;2790, 2016.</span></p>
+<p class="para-4"><span class="font-3">[5] A. Mittal, R. Soundararajan, and A. C. Bovik, &ldquo;Making a &lsquo;completely blind&rsquo; image quality analyzer,&rdquo; IEEE Signal Processing Letters, vol. 20, no. 3, pp. 209&ndash;212, 2013.</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">[6] C. Lee, C. Lee, and C. S. Kim, &ldquo;Contrast enhancement based on layered difference representation,&rdquo; pp. 965&ndash;968, 2013.</span></p>
+<p class="para-4"><span class="font-3">[7] K. Ma, K. Zeng, and Z. Wang, &ldquo;Perceptual quality assessment for multi-exposure image fusion,&rdquo; IEEE Transactions on Image Processing A Publication of the IEEE Signal Processing Society, vol. 24, no. 11, p. 3345, 2015.</span></p>
+</div>
+<div class="vis-2 pos-10 size-6 cont-8">
+<picture class="img-2">
+<source srcset="images/fg-739.jpg 1x, images/fg-1478.jpg 2x">
+<img src="images/fg-739.jpg" alt="" class="js img">
+</picture>
+</div>
+<div class="vis-2 pos-11 size-7 cont-9">
+<picture class="img-4">
+<source srcset="images/result-766-2.jpg 1x, images/result-1532-2.jpg 2x">
+<img src="images/result-766-2.jpg" alt="" class="js-2 img-3">
+</picture>
+</div>
+<div class="vis-2 pos-12 size-8 cont-10">
+<div class="vis-2 pos-4 size-8 cont-11">
+<div class="vis-2 pos-4 size-8 colwrapper">
+<div class="vis-2 pos-4 size-8 cont-2">
+<div class="vis-2 pos-4 size-8 colwrapper">
+<div class="vis-2 pos-4 size-8 cont-2">
+<div class="vis-2 pos-4 size-8 colwrapper">
+<div class="vis-2 pos-13 size-9 cont-2">
+<div class="vis-2 pos-4 size-9 colwrapper">
+<div class="vis-2 pos-4 size-10 cont-2">
+<div class="vis-2 pos-4 size-10 colwrapper">
+<div class="vis-2 pos-4 size-11 cont-2">
+<div class="vis-2 pos-4 size-11 colwrapper">
+<div class="vis-2 pos-4 size-12 cont-2">
+<div class="vis-2 pos-4 size-13 cont-12">
+<p class="para-2"><span class="font-3">Dataset</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont-13">
+<p class="para-2"><span class="font-3">DICM</span></p>
+</div>
+<div class="vis-2 pos-14 size-13 cont-14">
+<p class="para-2"><span class="font-3">NPE</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont-15">
+<p class="para-2"><span class="font-3">MEF</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont-16">
+<p class="para-2"><span class="font-3">Average</span></p>
+</div>
+</div>
+<div class="vis-2 pos-15 size-12 cont-17">
+<div class="vis-2 pos-4 size-12 cont-11">
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">MSRCR</span></p>
+</div>
+<div class="vis-2 pos-14 size-13 cont">
+<p class="para-2"><span class="font-3">3.117</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.369</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">4.362</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.586</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-16 size-12 cont-18">
+<div class="vis-2 pos-4 size-12 cont-11">
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">LIME</span></p>
+</div>
+<div class="vis-2 pos-14 size-13 cont">
+<p class="para-2"><span class="font-3">3.243</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.649</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">4.745</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.885</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-16 size-12 cont-19">
+<div class="vis-2 pos-4 size-12 cont-11">
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">DeHZ</span></p>
+</div>
+<div class="vis-2 pos-14 size-13 cont">
+<p class="para-2"><span class="font-3">3.608</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">4.258</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">5.071</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">4.338</span></p>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-16 size-14 cont-2">
+<div class="vis-2 pos-4 size-14 colwrapper">
+<div class="vis-2 pos-4 size-12 cont-20">
+<div class="vis-2 pos-4 size-12 cont-11">
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">SRIE</span></p>
+</div>
+<div class="vis-2 pos-14 size-13 cont">
+<p class="para-2"><span class="font-3">2.975</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.127</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">4.042</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.381</span></p>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-16 size-12 cont-21">
+<div class="vis-2 pos-4 size-12 cont-11">
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">GLADNet</span></p>
+</div>
+<div class="vis-2 pos-14 size-13 cont">
+<p class="para-2"><span class="font-3">2.761</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.278</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.468</span></p>
+</div>
+<div class="vis-2 pos-4 size-13 cont">
+<p class="para-2"><span class="font-3">3.184</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-17 size-15 cont-22"></div>
+</div>
+</div>
+<div class="vis-2 pos-18 size-15 cont-23"></div>
+</div>
+</div>
+<div class="vis-2 pos-19 size-16 cont-24"></div>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-20 size-17 cont-25">
+<div class="vis-2 pos-4 size-17 cont-11">
+<div class="vis-2 pos-4 size-17 colwrapper">
+<div class="vis-2 pos-21 size-18 cont-26">
+<div class="vis-2 pos-4 size-18 cont-11">
+<div class="vis-2 pos-4 size-18 colwrapper">
+<div class="vis-2 pos-4 size-19 cont-2">
+<div class="vis-2 pos-4 size-20 cont-27">
+<p class="para-2"><span class="font-3">MSRCR</span></p>
+</div>
+<div class="vis-2 pos-4 size-20 cont-28">
+<p class="para-2"><span class="font-3">LIME</span></p>
+</div>
+<div class="vis-2 pos-14 size-20 cont-29">
+<p class="para-2"><span class="font-3">DeHZ</span></p>
+</div>
+<div class="vis-2 pos-4 size-20 cont-30">
+<p class="para-2"><span class="font-3">SRIE</span></p>
+</div>
+<div class="vis-2 pos-14 size-21 cont-31">
+<p class="para-2"><span class="font-3">GLADNet(cpu)</span></p>
+</div>
+<div class="vis-2 pos-4 size-21 cont-32">
+<p class="para-2"><span class="font-3">GLADNet(</span><span class="font-3">gpu</span><span class="font-3">)</span></p>
+</div>
+</div>
+<div class="vis-2 pos-22 size-19 cont-33">
+<div class="vis-2 pos-4 size-19 cont-11">
+<div class="vis-2 pos-4 size-20 cont">
+<p class="para-2"><span class="font-3">2.358s</span></p>
+</div>
+<div class="vis-2 pos-4 size-20 cont">
+<p class="para-2"><span class="font-3">0.105s</span></p>
+</div>
+<div class="vis-2 pos-14 size-20 cont">
+<p class="para-2"><span class="font-3">0.282s</span></p>
+</div>
+<div class="vis-2 pos-4 size-20 cont">
+<p class="para-2"><span class="font-3">8.019s</span></p>
+</div>
+<div class="vis-2 pos-14 size-21 cont">
+<p class="para-2"><span class="font-3">6.099s</span></p>
+</div>
+<div class="vis-2 pos-4 size-21 cont">
+<p class="para-2"><span class="font-3">0.278s</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-23 size-22 cont-34"></div>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-24 size-23 cont-35">
+<picture class="img-6">
+<source srcset="images/app1-773.jpg 1x, images/app1-1546.jpg 2x">
+<img src="images/app1-773.jpg" alt="" class="js-3 img-5">
+</picture>
+</div>
+<div class="vis-2 pos-25 size-23 cont-36">
+<picture class="img-6">
+<source srcset="images/app1-773-2.jpg 1x, images/app1-1546-2.jpg 2x">
+<img src="images/app1-773-2.jpg" alt="" class="js-4 img-5">
+</picture>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index.20180305151939.js"></script>
+<script type="text/javascript">
+var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
+</script>
+</body>
+</html>
