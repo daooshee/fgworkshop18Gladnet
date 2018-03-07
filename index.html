@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=960">
 <title>FG 2018 FOR-LQ workshop GLADNet</title>
-<link rel="stylesheet" type="text/css" href="css/site.20180306215210.css">
+<link rel="stylesheet" type="text/css" href="css/site.20180307082954.css">
 <!--[if lte IE 7]>
-<link rel="stylesheet" type="text/css" href="css/site.20180306215210-lteIE7.css">
+<link rel="stylesheet" type="text/css" href="css/site.20180307082954-lteIE7.css">
 <![endif]-->
 </head>
 <body id="body">
@@ -30,7 +30,7 @@
 </div>
 <div class="vis-2 pos-8 size-4 cont">
 <p class="para-2"><span class="font-3">FG, 2018 | Paper Link: NULL</span></p>
-<p class="para-3"><span class="font-4">* </span><span class="font-4">The first and second authors are equally contributed to this study.</span></p>
+<p class="para-3"><span class="font-4">* indicates equal contributions</span></p>
 </div>
 <div class="vis-2 pos-9 size-5 cont">
 <p class="para-4"><span class="font-5">Abstract</span></p>
@@ -50,7 +50,7 @@
 <p class="para-4"><span class="font-5">Experimental Results</span></p>
 <p class="para-5"><span class="font-3">The proposed method is implemented by Tensorflow on NVIDIA GeForce GTX 1080. We compare the proposed method with MSRCR[1], LIME[2], DeHZ[3], and SRIE[4] and evaluate the results on public LIME-data[2], DICM[6], and MEF[7] datasets.</span></p>
 <p class="para-5"><span class="font-3">&nbsp;</span></p>
-<p class="para-5"><span class="font-3">Subjective evaluation:</span></p>
+<p class="para-5"><span class="font-2">Subjective evaluation:</span></p>
 </div>
 <div class="vis-2 pos-11 size-8 cont">
 <picture class="img-4">
@@ -59,7 +59,7 @@
 </picture>
 </div>
 <div class="vis-2 pos-12 size-9 cont">
-<p class="para-5"><span class="font-3">Objective evaluation:</span></p>
+<p class="para-5"><span class="font-2">Objective evaluation:</span><span class="font-3">&nbsp;</span></p>
 <p class="para-5"><span class="font-3">We use the Naturalness Image Quality Evaluator (NIQE) [5] no-reference image quality score for quantitative comparison. NIQE compares images to a default model computed from images of natural scenes. A smaller score indicates better perceptual quality. As shown in the table, our method outperforms other state-of-the-art methods on average.</span></p>
 </div>
 <div class="vis-2 pos-11 size-10 cont-2">
@@ -179,19 +179,19 @@
 <div class="vis-2 pos-17 size-15 cont-18">
 <div class="vis-2 pos-4 size-15 cont-8">
 <div class="vis-2 pos-4 size-16 cont">
-<p class="para-2"><span class="font-3">GLADNet</span></p>
+<p class="para-2"><span class="font-2">GLADNet</span></p>
 </div>
 <div class="vis-2 pos-15 size-16 cont">
-<p class="para-2"><span class="font-3">2.761</span></p>
+<p class="para-2"><span class="font-2">2.761</span></p>
 </div>
 <div class="vis-2 pos-4 size-16 cont">
-<p class="para-2"><span class="font-3">3.278</span></p>
+<p class="para-2"><span class="font-2">3.278</span></p>
 </div>
 <div class="vis-2 pos-4 size-16 cont">
-<p class="para-2"><span class="font-3">3.468</span></p>
+<p class="para-2"><span class="font-2">3.468</span></p>
 </div>
 <div class="vis-2 pos-4 size-16 cont">
-<p class="para-2"><span class="font-3">3.184</span></p>
+<p class="para-2"><span class="font-2">3.184</span></p>
 </div>
 </div>
 </div>
@@ -210,7 +210,7 @@
 </div>
 </div>
 <div class="vis-2 pos-21 size-9 cont-22">
-<p class="para-5"><span class="font-3">Running time:</span></p>
+<p class="para-5"><span class="font-2">Running time:</span><span class="font-3">&nbsp;</span></p>
 <p class="para-5"><span class="font-3">For MSRCR, LIME, DeHZ, and SRIE, we used the MATLAB code provided by Zhenqiang Ying on lowlight. For these and GLADNet CPU version, we use Intel Core i5 at 2.7GHz. For GLADNet GPU version, we use Intel Core i7-6850K at 3.60GHz and NVIDIA GeForce GTX 1080. We calculated the average running time per image to enhance the MEF dataset.</span></p>
 </div>
 </div>
@@ -218,74 +218,76 @@
 <div class="vis-2 pos-22 size-20 cont">
 <div class="vis-2 pos-4 size-20 cont-8">
 <div class="vis-2 pos-4 size-20 colwrapper">
-<div class="vis-2 pos-23 size-21 cont-23">
-<div class="vis-2 pos-4 size-21 cont-8">
-<div class="vis-2 pos-4 size-21 colwrapper">
-<div class="vis-2 pos-4 size-22 cont-2">
-<div class="vis-2 pos-4 size-23 cont-24">
+<div class="vis-2 pos-23 size-21 cont-2">
+<div class="vis-2 pos-4 size-22 colwrapper">
+<div class="vis-2 pos-4 size-23 cont-23">
 <p class="para-2"><span class="font-3">MSRCR</span></p>
 </div>
+<div class="vis-2 pos-24 size-23 cont-24">
+<p class="para-2"><span class="font-3">2.358s</span></p>
+</div>
+</div>
+<div class="vis-2 pos-4 size-22 colwrapper">
 <div class="vis-2 pos-4 size-23 cont-25">
 <p class="para-2"><span class="font-3">LIME</span></p>
 </div>
-<div class="vis-2 pos-15 size-23 cont-26">
-<p class="para-2"><span class="font-3">DeHZ</span></p>
-</div>
-<div class="vis-2 pos-4 size-23 cont-27">
-<p class="para-2"><span class="font-3">SRIE</span></p>
-</div>
-<div class="vis-2 pos-15 size-24 cont-28">
-<p class="para-2"><span class="font-3">GLADNet(cpu)</span></p>
-</div>
-<div class="vis-2 pos-4 size-24 cont-29">
-<p class="para-2"><span class="font-3">GLADNet(gpu)</span></p>
-</div>
-</div>
-<div class="vis-2 pos-24 size-22 cont-30">
-<div class="vis-2 pos-4 size-22 cont-8">
-<div class="vis-2 pos-4 size-23 cont">
-<p class="para-2"><span class="font-3">2.358s</span></p>
-</div>
-<div class="vis-2 pos-4 size-23 cont">
+<div class="vis-2 pos-24 size-23 cont-26">
 <p class="para-2"><span class="font-3">0.105s</span></p>
 </div>
-<div class="vis-2 pos-15 size-23 cont">
+</div>
+<div class="vis-2 pos-15 size-22 colwrapper">
+<div class="vis-2 pos-4 size-23 cont-27">
+<p class="para-2"><span class="font-3">DeHZ</span></p>
+</div>
+<div class="vis-2 pos-24 size-23 cont-28">
 <p class="para-2"><span class="font-3">0.282s</span></p>
 </div>
-<div class="vis-2 pos-4 size-23 cont">
+</div>
+<div class="vis-2 pos-4 size-22 colwrapper">
+<div class="vis-2 pos-4 size-23 cont-29">
+<p class="para-2"><span class="font-3">SRIE</span></p>
+</div>
+<div class="vis-2 pos-24 size-23 cont-30">
 <p class="para-2"><span class="font-3">8.019s</span></p>
 </div>
-<div class="vis-2 pos-15 size-24 cont">
-<p class="para-2"><span class="font-3">6.099s</span></p>
 </div>
-<div class="vis-2 pos-4 size-24 cont">
-<p class="para-2"><span class="font-3">0.278s</span></p>
+<div class="vis-2 pos-5 size-24 colwrapper">
+<div class="vis-2 pos-4 size-25 cont-31">
+<p class="para-2"><span class="font-2">GLADNet(cpu)</span></p>
 </div>
-</div>
-</div>
-</div>
+<div class="vis-2 pos-24 size-25 cont-32">
+<p class="para-2"><span class="font-2">6.099s</span></p>
 </div>
 </div>
-<div class="vis-2 pos-25 size-25 cont-31"></div>
+<div class="vis-2 pos-25 size-24 colwrapper">
+<div class="vis-2 pos-4 size-25 cont-33">
+<p class="para-2"><span class="font-2">GLADNet(gpu)</span></p>
+</div>
+<div class="vis-2 pos-24 size-25 cont-34">
+<p class="para-2"><span class="font-2">0.278s</span></p>
 </div>
 </div>
 </div>
-<div class="vis-2 pos-11 size-26 cont">
-<p class="para-5"><span class="font-3">Applications on Computer Vision:</span></p>
+<div class="vis-2 pos-26 size-26 cont-35"></div>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-11 size-27 cont">
+<p class="para-5"><span class="font-2">Applications on Computer Vision:</span><span class="font-3">&nbsp;</span></p>
 <p class="para-5"><span class="font-3">We test several real low-light images and their corresponding enhanced results on Google Cloud Vision API. GLADNet helps Google Cloud Vision API identify the objects in this image.</span></p>
 </div>
-<div class="vis-2 pos-26 size-27 cont">
+<div class="vis-2 pos-27 size-28 cont">
 <picture class="img-6">
 <source srcset="images/app1-741.jpg 1x, images/app1-1482.jpg 2x">
 <img src="images/app1-741.jpg" alt="" class="js-3 img-5">
 </picture>
 </div>
-<div class="vis-2 pos-27 size-28 cont-2">
-<div class="vis-2 pos-4 size-28 colwrapper">
-<div class="vis-2 pos-4 size-29 cont-32">
+<div class="vis-2 pos-28 size-29 cont-2">
+<div class="vis-2 pos-4 size-29 colwrapper">
+<div class="vis-2 pos-4 size-30 cont-36">
 <p class="para-5"><span class="font-3">Results of Google Cloud Vision API for &ldquo;Eiffel Tower&rdquo; from MEF dataset. Before enhancement, Google Cloud Vision can not recognize the Eiffel Tower. After enhanced by GLADNet, the Eiffel Tower is identified and marked by a green box.</span></p>
 </div>
-<div class="vis-2 pos-28 size-27 cont-33">
+<div class="vis-2 pos-29 size-28 cont-37">
 <picture class="img-8">
 <source srcset="images/app2-741.jpg 1x, images/app2-1482.jpg 2x">
 <img src="images/app2-741.jpg" alt="" class="js-4 img-7">
@@ -293,7 +295,7 @@
 </div>
 </div>
 </div>
-<div class="vis-2 pos-29 size-30 cont">
+<div class="vis-2 pos-30 size-31 cont">
 <p class="para-5"><span class="font-3">Results for &ldquo;Room&rdquo; from LIME-data dataset. Potted plant and painting in the non-enhanced version are not identified by Google Cloud Vision.</span></p>
 <p class="para-5"><span class="font-3">&nbsp;</span></p>
 <p class="para-4"><span class="font-5">Download Link</span></p>
@@ -310,7 +312,7 @@
 </div>
 </div>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/index.20180306215210.js"></script>
+<script type="text/javascript" src="js/index.20180307082954.js"></script>
 <script type="text/javascript">
 var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
 </script>
